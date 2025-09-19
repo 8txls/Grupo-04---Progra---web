@@ -1,0 +1,143 @@
+/* Contenedor principal */
+.form-container {
+  max-width: 1200px;
+  margin: 2rem auto 4rem auto; /* más arriba, centrado */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: calc(100vh - 100px); /* asegura que no quede muy bajo */
+}
+
+/* Fila de encabezado (Título + botón Agregar) */
+.listado-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Botón agregar */
+.btn-agregar {
+  background-color: #1e60d4;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-agregar:hover {
+  background-color: #154aad;
+}
+
+/* Sección de búsqueda */
+.buscador {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buscador input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 250px;
+}
+
+.buscador button {
+  padding: 10px 20px;
+  background-color: #1e60d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buscador button:hover {
+  background-color: #154aad;
+}
+
+/* Tabla de productos */
+.tabla-productos {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.tabla-productos th {
+  background-color: #f5f7fa;
+  color: #1b2e4b;
+}
+
+/* Imagen miniatura */
+.img-mini {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* Columna ID destacada */
+.id {
+  color: #d1235a;
+  font-weight: bold;
+}
+
+/* Botones de acción */
+.accion {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.accion.editar {
+  color: #1e60d4;
+}
+
+.accion.eliminar {
+  color: #d1235a;
+}
+/* Correcciones para que todo esté alineado y consistente */
+
+.listado-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.listado-buscador {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.listado-buscador input {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+ /* Asegura que el texto dentro de las filas se vea */
+.tabla-productos td {
+  color: #1b2e4b; /* Azul oscuro legible sobre fondo blanco */
+}

@@ -1,0 +1,152 @@
+
+.tabla-ordenes {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1b2e4b;
+}
+
+.tabla-ordenes th,
+.tabla-ordenes td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabla-ordenes th {
+  background-color: #f5f7fa;
+  font-weight: bold;
+}
+
+.tabla-ordenes td {
+  font-size: 0.95rem;
+}
+
+
+.tabla-ordenes tr:hover {
+  background-color: #f4f6fa;
+}
+
+
+.estado-activo {
+  color: green;
+  font-weight: bold;
+}
+
+.estado-cancelado {
+  color: red;
+  font-weight: bold;
+}
+
+
+.modal-cart-list {
+  display: flex;
+  gap: 12px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.modal-cart-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  padding: 8px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.modal-cart-item img,
+.modal-cart-img {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-blue-600 {
+  color: #1e60d4;
+}
+
+.bg-red-600 {
+  background-color: #dc2626;
+}
+
+.text-white {
+  color: white;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.border {
+  border: 1px solid #eee;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.font-mono {
+  font-family: monospace, monospace;
+}
+
+
+.btn-tabla {
+  background-color: #1e60d4;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.btn-tabla:hover {
+  background-color: #154aad;
+}

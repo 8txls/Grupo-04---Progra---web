@@ -1,0 +1,53 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-eliminar {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  color: #1b2e4b; 
+  font-size: 16px;
+}
+
+.modal-eliminar h2 {
+  margin-bottom: 10px;
+  color: #1b2e4b; 
+  
+}
+
+.modal-eliminar p {
+  margin-bottom: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.btn-si {
+  background: #d1235a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-no {
+  background: #ccc;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}

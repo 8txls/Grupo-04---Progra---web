@@ -1,0 +1,240 @@
+/* Contenedor principal del header */
+.app-header {
+    background-color: #333; 
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky; /* Para que se quede fijo en la parte superior */
+    top: 0;
+    z-index: 1000; 
+    width: 100%;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Contenedor del logo/nombre de la tienda */
+  .logo-container {
+    flex-shrink: 0; 
+  }
+  
+  .mitienda-logo-button { /* Estilo para el Link "MiTienda" */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .mitienda-logo-button:hover {
+    color: #0056b3; 
+  }
+  
+  /* Contenedor de la barra de búsqueda y sugerencias */
+  .search-bar-wrapper {
+    position: relative; 
+    flex-grow: 1;
+    margin: 0 25px;
+    max-width: 600px; 
+  }
+  
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+    background-color: #f0f2f5; 
+    border-radius: 20px; 
+    padding: 0 15px;
+    height: 40px;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 0.95rem;
+    background-color: transparent; 
+    color: #333;
+  }
+  
+  .search-input::placeholder {
+    color: #888;
+  }
+  
+  .search-icon-wrapper { 
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+  }
+  .search-icon-wrapper:hover {
+    color: #007bff;
+  }
+  
+  /* Lista de sugerencias de búsqueda */
+  .search-suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1001; 
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  .search-suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .search-suggestion-item:last-child {
+    border-bottom: none;
+  }
+  
+  .search-suggestion-item:hover,
+  .search-suggestion-item:focus {
+    background-color: #f0f8ff; 
+    outline: none;
+  }
+  
+  .suggestion-item-image {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-right: 12px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    flex-shrink: 0;
+  }
+  
+  .suggestion-item-name {
+    flex-grow: 1;
+    color: #333;
+  }
+  
+  /* Contenedor de acciones del header (login, carrito) */
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+  }
+  
+  /* Botones de acción generales */
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px; 
+    display: flex;
+    align-items: center;
+    color: #333; 
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .action-button:hover {
+    color: #007bff; 
+  }
+  
+  /* Estilo para el botón de usuario/login */
+  .user-button .user-info {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Espacio entre el ícono y el texto */
+  }
+  
+  .user-button .user-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+
+  }
+  
+  .user-display {
+    color: #ffffff; 
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .user-display UserIcon { 
+    margin-right: 5px;
+  }
+  
+  /* Botón de cerrar sesión */
+  .logout-button {
+    background: #dc3545;
+    color: #fff;
+    padding: 6px 12px; 
+    border-radius: 6px; 
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .logout-button:hover {
+    background: #c82333; 
+  }
+  
+  /* Botón del carrito */
+  .cart-button {
+    position: relative; 
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -5px;    
+    right: -8px;  
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 1; 
+    min-width: 18px;
+    text-align: center;
+  }
+  
+
+  .app-header [role="img"] {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .header-actions {
+      width: 100%;
+      justify-content: center;
+    }
+  }

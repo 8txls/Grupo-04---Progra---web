@@ -1,0 +1,86 @@
+
+.lista-usuarios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f4f6fa;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1b2e4b;
+}
+
+
+.lista-usuarios-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+
+.filtros {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filtros input {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  flex: 1;
+}
+
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabla-usuarios th {
+  background-color: #f5f7fa;
+  font-weight: bold;
+}
+
+.tabla-usuarios td {
+  font-size: 0.95rem;
+  color: #1b2e4b;
+}
+
+
+.btn-tabla {
+  background-color: #1e60d4;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.btn-tabla:hover {
+  background-color: #154aad;
+}
+
+
+.estado-activo {
+  color: green;
+  font-weight: bold;
+}
+
+.estado-inactivo {
+  color: red;
+  font-weight: bold;
+}

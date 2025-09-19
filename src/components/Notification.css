@@ -1,0 +1,53 @@
+.notification-title {
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+
+.notification-message {
+    font-size: 0.9rem;
+    color: white;
+    margin: 0;
+    opacity: 0.95;
+}
+
+.notification-card {
+    background: linear-gradient(135deg, #4facfe 0%, #64b7ff 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    position: fixed;
+    top: 24px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 100000;
+    box-shadow: 0 8px 32px rgba(79, 172, 254, 0.3);
+    backdrop-filter: blur(10px);
+    animation: slideInOut 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    min-width: 280px;
+    text-align: center;
+}
+
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) translateX(50%) scale(1);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translateY(0) translateX(50%) scale(1);
+    }
+
+    85% {
+        opacity: 1;
+        transform: translateY(0) translateX(50%) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-30px) translateX(50%) scale(1);
+    }
+}
